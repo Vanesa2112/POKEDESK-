@@ -1,0 +1,105 @@
+:root {
+  --pokedex-red : #dda6a7de;
+  --pokedex-white: #dedede;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  height: 100%;
+  background-color: var(--pokedex-red);
+}
+
+.title {
+  text-align: center;
+  font-size: 3em;
+}
+
+.main {
+  display: flex;
+  height: 80vh; /*Viewport height*/
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main .inputFields,
+.main .pokemonData {
+  width: 50%;
+}
+
+.main .inputFields {
+  display: flex;
+  flex-direction: column;
+  font-size: 2em;
+  text-align: center;
+  justify-content: center;
+  margin-block: 0;
+}
+
+.inputFields input {
+  font-size: 1.2em;
+  border-radius: 10px;
+  margin-right: 10px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.inputFields .buttons img {
+  margin: 10px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+.pokemonData {
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemonData .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid black;
+  background-color: var(--pokedex-white);
+  margin-block-end: 20px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.pokemonData .container:hover {
+  cursor: pointer;
+  background-color: rgb(121, 255, 255);
+}
+
+.pokemonData .container img {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.pokemonData .container h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pokemonData .container .pokemonStatsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.pokemonData .container .pokemonStatsContainer p {
+  box-sizing: border-box;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
